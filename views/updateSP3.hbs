@@ -1,0 +1,12 @@
+<h2>update</h2>
+<form action="/product/updateSP/{{itemProduct._id}}" method="post">
+    <label for="">id</label>
+    <input type="text" name="id" value="{{itemProduct._id}}">
+    <label for="">ma sp</label>
+    <input type="text" name="Tensp" value="{{itemProduct.Tensp}}">
+    <label for="quantityProducts" class="form-label">Số lượng </label>
+            <input type="text" class="form-control rounded-pill border border-dark" name="Soluong"
+                value="{{itemProduct.Soluong}}">
+                <button type="submit" class="btn btn-primary justify-content-center" style="padding: 10px;">Xác Nhận
+            </button>
+</form>

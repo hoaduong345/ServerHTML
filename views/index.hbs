@@ -1,0 +1,270 @@
+<section class="home">
+  <div class="content">
+    <h3> Biggest clothe Sale
+      <br><span>Up to 50% off</span>
+    </h3>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia, distinctio iste sequi expedita eveniet
+      quaerat.</p>
+    <button id="shopnow">Shop Now</button>
+  </div>
+  <div class="img">
+    <img src="/b2.png" alt="">
+  </div>
+
+</section>
+
+<!-- home content  -->
+{{!-- </div> --}}
+<!-- top cards  -->
+
+<div class="container " id="top-cards">
+  <div class="row">
+    <div class="col-md-5 py-3 py-md-0">
+      <div class="card" style="background-color: #a9a9a926;">
+        <img src="/topcard1.png" alt="">
+        <div class="card-img-overlay">
+          <h5 class="card-title"> Smart Watch</h5>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, facere!</p>
+          <p><strong>$200.30 <strike>$250.10</strike></strong></p>
+          <button>Oder Now</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4 py-3 py-md-0">
+      <div class="card" style="background-color: #a9a9a926;">
+        <img src="/topcard2.png" alt="">
+        <div class="card-img-overlay">
+          <h5 class="card-title"> Nike Shoes</h5>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, facere!</p>
+          <p><strong>$550 <strike>$600</strike></strong></p>
+
+          <button>Oder Now</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-3 py-3 py-md-0">
+      <div class="card" style="background-color: #a9a9a926;">
+        <img src="/topcard3.png" alt="">
+        <div class="card-img-overlay">
+          <h5 class="card-title"> Bag</h5>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, facere!</p>
+          <p><strong>$150.30 <strike>$200.10</strike></strong></p>
+
+          <button>Oder Now</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+</div>
+<!-- top cards  -->
+
+<!-- banner  -->
+<div class="banner">
+  <div class="content">
+    <h1>Get Up To 50% sale Off</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur, adipisci.</p>
+    <div id="bannerbtn"><button>SHOP NOW</button></div>
+  </div>
+
+</div>
+
+<!-- banner  -->
+<!-- product cards  -->
+<div class="container" id="product-cards">
+  <h1 class="text-center">PRODUCT</h1>
+  <div class="row" style="margin-top: 30px">
+
+
+    {{#each itemProduct}}
+    
+    <div class="col-md-3 py-3 py-md-1">
+      <div class="card">
+        <img src="/{{this.Hinhanh.[0]}}" alt="" style="height: 320px; ;">
+        <div class="card-body" style="height: 150px;">
+          <h3>{{this.Tensp}}</h3>
+          <p>{{this.MieuTa}}</p>
+          <div class="star">
+            <i class="fas fa-star checked"></i>
+            <i class="fas fa-star checked"></i>
+            <i class="fas fa-star checked"></i>
+            <i class="fas fa-star checked"></i>
+            <i class="fas fa-star checked"></i>
+          </div>
+          <h5>${{this.Gia}} <span><i class="fa-solid fa-cart-shopping"></i></span></h5>
+        </div>
+
+        <a class="d-flex justify-content-center" style="text-decoration: none;" href="/product/viewDetails/{{this._id}}"><button>View Details</button></a>
+       
+      </div>
+      
+    </div>
+  {{/each}}
+
+    {{!-- <div class="col-md-3 py-3 py-md-0">
+      <div class="card">
+        <img src="/p14.png" alt="">
+        <div class="card-body">
+          <h3>Purple heel</h3>
+          <p>Lorem ipsum dolor sit amet.</p>
+          <div class="star">
+            <i class="fas fa-star checked"></i>
+            <i class="fas fa-star checked"></i>
+            <i class="fas fa-star checked"></i>
+            <i class="fas fa-star checked"></i>
+            <i class="fas fa-star checked"></i>
+          </div>
+          <h5>$56.60 <strike>$70</strike> <span><i class="fa-solid fa-cart-shopping"></i></span></h5>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3 py-3 py-md-0">
+      <div class="card">
+        <img src="/p15.png" alt="">
+        <div class="card-body">
+          <h3>Men Shoes</h3>
+          <p>Lorem ipsum dolor sit amet.</p>
+          <div class="star">
+            <i class="fas fa-star checked"></i>
+            <i class="fas fa-star checked"></i>
+            <i class="fas fa-star checked"></i>
+            <i class="fas fa-star checked"></i>
+            <i class="fas fa-star checked"></i>
+          </div>
+          <h5>$200 <strike>$220</strike> <span><i class="fa-solid fa-cart-shopping"></i></span></h5>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3 py-3 py-md-0">
+      <div class="card">
+        <img src="/p16.png" alt="">
+        <div class="card-body">
+          <h3>Men jacket</h3>
+          <p>Lorem ipsum dolor sit amet.</p>
+          <div class="star">
+            <i class="fas fa-star checked"></i>
+            <i class="fas fa-star checked"></i>
+            <i class="fas fa-star checked"></i>
+            <i class="fas fa-star checked"></i>
+            <i class="fas fa-star checked"></i>
+          </div>
+          <h5>$50.5 <strike>$60</strike> <span><i class="fa-solid fa-cart-shopping"></i></span></h5>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row" style="margin-top: 30px">
+    <div class="col-md-3 py-3 py-md-0">
+      <div class="card">
+        <img src="/p17.png" alt="">
+        <div class="card-body">
+          <h3>blue T-shirt</h3>
+          <p>Lorem ipsum dolor sit amet.</p>
+          <div class="star">
+            <i class="fas fa-star checked"></i>
+            <i class="fas fa-star checked"></i>
+            <i class="fas fa-star checked"></i>
+            <i class="fas fa-star checked"></i>
+            <i class="fas fa-star checked"></i>
+          </div>
+          <h5>$5.60 <strike>$10</strike> <span><i class="fa-solid fa-cart-shopping"></i></span></h5>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3 py-3 py-md-0">
+      <div class="card">
+        <img src="/p18.png" alt="">
+        <div class="card-body">
+          <h3>Girls Sandal</h3>
+          <p>Lorem ipsum dolor sit amet.</p>
+          <div class="star">
+            <i class="fas fa-star checked"></i>
+            <i class="fas fa-star checked"></i>
+            <i class="fas fa-star checked"></i>
+            <i class="fas fa-star checked"></i>
+            <i class="fas fa-star checked"></i>
+          </div>
+          <h5>$56.60 <strike>$70</strike> <span><i class="fa-solid fa-cart-shopping"></i></span></h5>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3 py-3 py-md-0">
+      <div class="card">
+        <img src="/p19.png" alt="">
+        <div class="card-body">
+          <h3>Men Jacket</h3>
+          <p>Lorem ipsum dolor sit amet.</p>
+          <div class="star">
+            <i class="fas fa-star checked"></i>
+            <i class="fas fa-star checked"></i>
+            <i class="fas fa-star checked"></i>
+            <i class="fas fa-star checked"></i>
+            <i class="fas fa-star checked"></i>
+          </div>
+          <h5>$200 <strike>$220</strike> <span><i class="fa-solid fa-cart-shopping"></i></span></h5>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3 py-3 py-md-0">
+      <div class="card">
+        <img src="/p20.png" alt="">
+        <div class="card-body">
+          <h3>Men T-shirt</h3>
+          <p>Lorem ipsum dolor sit amet.</p>
+          <div class="star">
+            <i class="fas fa-star checked"></i>
+            <i class="fas fa-star checked"></i>
+            <i class="fas fa-star checked"></i>
+            <i class="fas fa-star checked"></i>
+            <i class="fas fa-star checked"></i>
+          </div>
+          <h5>$50.5 <strike>$60</strike> <span><i class="fa-solid fa-cart-shopping"></i></span></h5>
+        </div>
+      </div>
+    </div>
+  </div> --}}
+
+  
+  <a href="" id="viewmorebtn">View More</a>
+</div>
+<div class="container" style="margin-top: 100px;">
+  <hr>
+</div>
+
+<div class="container">
+  <h3 style="font-weight: bold;"> PRODUCT</h3>
+  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio consectetur quo iure labore dolorem, amet
+    perspiciatis incidunt id facilis saepe obcaecati eos dignissimos dolorum ipsum? Voluptates temporibus ex autem nam
+    ad, dicta, voluptate itaque veniam commodi vero deserunt saepe porro quam eius aliquam tenetur excepturi sit
+    distinctio voluptatem libero mollitia ipsam corrupti? Quidem, provident officia. Minima molestiae aperiam soluta!
+    Assumenda facere amet tempore excepturi deleniti nesciunt rerum eum commodi enim, officiis ipsa minima recusandae
+    quos officia consectetur iste itaque quam sed exercitationem illo iure. Quam mollitia aperiam, aliquam deserunt,
+    officiis laboriosam ad voluptas a incidunt, ratione ducimus corporis cumque velit.</p>
+
+</div>
+
+<div class="container" id="offer">
+  <div class="row">
+
+    <div class="col-md-4 py-3 py-md-0">
+      <i class="fa-solid fa-cart-shopping"></i>
+      <h5>Free Shipping</h5>
+      <p>On oder over $100</p>
+    </div>
+    <div class="col-md-4 py-3 py-md-0">
+      <i class="fa-solid fa-truck"></i>
+      <h5>Fast Delivery</h5>
+      <p>World wide</p>
+    </div>
+    <div class="col-md-4 py-3 py-md-0">
+      <i class="fa-solid fa-thumbs-up"></i>
+      <h5>Big choice</h5>
+      <p>Of product</p>
+    </div>
+
+  </div>
+</div>

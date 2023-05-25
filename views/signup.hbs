@@ -1,0 +1,99 @@
+ <h2>{{tieudeUser}}</h2>
+
+ <form action="/user/signup" method="POST" class="needs-validation" novalidate>
+    <div class="container d-flex justify-content-center align-items-center min-vh-100">
+    <!--- Login container-->
+
+        <div class="row boder rounded-5 p-3 bg-white shadow box-area">
+
+    <!--- left box-->
+            <div class="col-md-6 rounded-4 d-flex justify-content-center align-items-center flex-column left-box" style="background: #AACBFF; border-radius: 4%;">
+                <div class="fetured-image mb-3 ">
+                    <img src="/SignUp.jpg" class="img-fluid" style="width: 300px; ">
+                </div>
+                <p class="text-white fs-2" style=" font-family: 'Courier New', Courier, monospace;font-weight: 600;">SignUp Account</p>
+                <small class="text-white text-wrap text-center" style="width: 17rem; font-family: 'Courier New', Courier, monospace ;"> Join experienced Desingers on this platform</small>
+            </div>    
+
+            
+    <!--- right box -->
+    
+            <div class="col-md-6 right-box">
+                <div class="row align-items-center">
+                    <div class="header-text mb-4">
+                        <h2>Hello,Again</h2>
+                        <p> We are happy to have your back.</p>
+
+                    </div>
+                 
+                    <div class="mb-3">
+                        <input type="hidden" name="id" />
+                    </div>
+
+                    <div class="input-group mb-3">                       
+                        <input type="text" for="validationDefault01" value="" class="form-control form-control-lg bg-light fs-6" name="Name" placeholder="Your Name" required>
+                        <div class="invalid-feedback">
+                        Your Name
+                        </div>
+                    </div>
+                
+                        <div class="input-group mb-3">
+                            <input type="email" for="validationDefault01" onblur="validationDefault01" class="form-control form-control-lg bg-light fs-6" name="Email" placeholder="Email Address" required>
+                            <div class="invalid-feedback">
+                                An Email!                                                                
+                            </div>
+                            <div class="invalid-feedback">
+                               
+                            </div>
+                            
+                        </div>
+                 
+                    <div class="input-group mb-3">
+                        <input type="password" class="form-control form-control-lg bg-light fs-6" name="Password" placeholder="Password" required>
+                        <div class="valid-feedback">
+                            Look good!
+                        </div>
+                    </div>
+                    <div class="input-group mb-3">
+                        <input type="password" class="form-control form-control-lg bg-light fs-6" placeholder="Confirm Password" required>
+                        <div class="invalid-feedback">
+                            Same with your password
+                        </div>
+                    </div> 
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control form-control-lg bg-light fs-6" name ="role" placeholder="role" required>
+                          <div class="invalid-feedback">
+                            choose your role
+                        </div>
+                    </div>
+                    <div class="input-group mb-5 d-flex justify-content-between">
+                        <div class="form-check mb-3">
+                            <input type="checkbox" class="form-check-input" id="invalidCheck" required>
+                               <label for="invalidCheck"  class="form-check-label text-secondary" > <small> I read and agree to <a href="#">Terms & Conditions</a></small></label>
+                            <div class="invalid-feedback">
+                                You must agree before submitting.
+                            </div>  
+                        </div>    
+                       
+                    </div>
+                  
+                    <div class="input-group mb-3">
+                        <button type="submit" class="btn btn-lg btn-primary w-100 fs-6">Sign Up</button>
+                    </div>
+                    <!-- <div class="input-group mb-3">
+                        <button class="btn btn-lg btn-light w-100 fs-6"><img src="Image/Google.png" style="width: 20px;" class="me-2"><small>Sign In With Google</small></button>
+                    </div>
+                    <div class="input-group mb-3">
+                        <button class="btn btn-lg btn-light w-100 fs-6"><img src="Image/Facebook.png" style="width: 20px;" class="me-2"><small>Sign In With Facebook</small></button>
+                    </div>-->
+                    <div class="row">
+                        <small>Already have account? <a href="/user/login">Sign In</a></small>
+                    </div> 
+                </div>
+
+            </div>   
+       
+
+        </div>
+    </div>    
+     </form>

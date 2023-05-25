@@ -1,0 +1,43 @@
+{{!-- {{tieudeSV}} --}}
+<h2>Thong tin Sp</h2>
+<h2>{{tieude}}</h2>
+{{!-- <a href="/sv/" class="btn btn-infor">Thông tin SV</a> --}}
+<table class="table">
+    <thead>
+
+        <tr>
+            <th scope="col">#</th>
+            {{!-- <th scope="col">Masv</th> --}}
+            <th scope="col">Tensp</th>
+            <th scope="col">Gia</th>
+            <th scope="col">Giamgia</th>
+            <th scope="col">Danhmuc</th>
+            <th scope="col">Hinhanh</th>
+            <th scope="col">Action</th>
+        </tr>
+    </thead>
+    <tbody>
+
+        {{#each itemProduct}}
+
+        <tr>
+            <td scope="col">#</td>
+            <td scope="col">{{this.Tensp}}</td>
+            <td scope="col">{{this.Gia}}</td>
+            <td scope="col">{{this.Giamgia}}</td>
+            <td scope="col">{{this.Danhmuc}}</td>
+            <td scope="col">
+                <img width="80" height="120" src="/{{this.Hinhanh.[0]}}" alt="">
+            </td>
+            <td>
+                <a href="/product/updateSP/{{this._id}}" class="btn btn-primary btn-sm">
+                    Sửa</a>                  
+                <a href="/product/delete/{{this._id}}" onclick="return confirm('chắc chắn muốn xoá?')"
+                    class="btn btn-secondary btn-sm">
+                    Xóa</a>
+            </td>
+        </tr>
+        {{/each}}
+
+    </tbody>
+</table>

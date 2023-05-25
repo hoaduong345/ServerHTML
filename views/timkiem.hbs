@@ -1,0 +1,26 @@
+ <h2>Tim kiem san pham</h2>
+ <h3>có {{dem}} sản phẩm</h3>
+<div class="row" style="margin-top: 30px">
+
+ {{#each itemProduct}}
+    
+    <div class="col-md-3 py-3 py-md-0">
+      <div class="card">
+        <img src="../{{this.Hinhanh.[0]}}" alt="">
+        <div class="card-body">
+          <h3>{{this.Tensp}}</h3>
+          <p>Lorem ipsum dolor sit amet.</p>
+          <div class="star">
+            <i class="fas fa-star checked"></i>
+            <i class="fas fa-star checked"></i>
+            <i class="fas fa-star checked"></i>
+            <i class="fas fa-star checked"></i>
+            <i class="fas fa-star checked"></i>
+          </div>
+          <h5>${{this.Gia}} <span><i class="fa-solid fa-cart-shopping"></i></span></h5>
+        </div>
+      </div>
+    </div>
+   </div>
+   </div>
+  {{/each}}

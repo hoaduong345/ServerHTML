@@ -1,0 +1,39 @@
+<h2>Thong tin TK</h2>
+<a href="/user/signup" class="btn btn-infor">Đăng ký</a>
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Email</th>
+      <th scope="col">Tên</th>
+      <th scope="col">Mật khẩu</th>
+      <th scope="col">Quyền</th>
+      <th scope="col">Hành động</th>
+    </tr>
+  </thead>
+  <tbody>
+
+    {{#each itemUsers}}
+      <tr>
+        <td scope="col">#</td>
+        <td scope="col">{{this.Email}}</td>
+        <td scope="col">{{this.Name}}</td>
+        <td scope="col">{{this.Password}}</td>
+        <td scope="col">{{this.role}}</td>
+        <td>
+          <a
+            href="/user/updateUser/{{this._id}}"
+            class="btn btn-primary btn-sm"
+          >
+            Sửa</a>
+          <a
+            href="/user/deleteUser/{{this._id}}"
+            onclick="return confirm('xoa ko?')"
+            class="btn btn-secondary btn-sm"
+          >
+            Xóa</a>
+        </td>
+      </tr>
+    {{/each}}
+  </tbody>
+</table>

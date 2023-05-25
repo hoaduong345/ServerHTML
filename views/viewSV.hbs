@@ -1,0 +1,40 @@
+{{tieudeSV}}
+<h2>Thong tin SV</h2>
+<a href="/sv/" class="btn btn-infor">Thông tin SV</a>
+<table class="table">
+<thead>
+
+<tr>
+    <th scope="col">#</th>
+    <th scope="col">Masv</th>
+    <th scope="col">Ten</th>
+    <th scope="col">Lop</th>
+    <th scope="col">Tuoi</th>
+    <th scope="col">Ngaysinh</th>
+    <th scope="col">Hinh</th>
+    <th scope="col">Action</th>
+</tr>
+</thead>
+<tbody>
+
+{{#each sv_ar}}
+
+    <tr>
+        <td scope="col">#</td>
+        <td scope="col">{{this.Tensp}}</td>
+        <td scope="col">{{this.Ten}}</td>
+        <td scope="col">{{this.Lop}}</td>
+        <td scope="col">{{this.Tuoi}}</td>
+        <td scope="col">{{this.Ngaysinh}}</td>
+        <td scope="col">{{this.Hinh}}</td>
+    <td>
+    <a href="/sv/update/{{this._id}}" class="btn btn-primary btn-sm">
+    Sửa</a>
+    <a href="/sv/delete/{{this._id}}" onclick="return confirm('chac chan?')" class="btn btn-secondary btn-sm">
+    Xóa</a>
+    </td>
+    </tr>
+{{/each}}
+
+</tbody>
+</table>
